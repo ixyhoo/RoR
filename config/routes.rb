@@ -6,5 +6,5 @@ root to: "pages#home"
   # Defines the root path route ("/")
   # root "articles#index"
   get "/salut(/:name)", to: "pages#salut", as: "salut"
-  get "/articles", to: "posts#index", as: "posts"
+  resources :posts
 end
