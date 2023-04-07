@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Post.destroy_all
+
+article1 = Post.create(title: "le jour rouge", content: "un deux trois nous irons au bois, cueillir des cerises")
+article2 = Post.create(title: "le jour vert, content: "un deux trois nous irons au bois, cueillir des cerises")
+article3 = Post.create(title: "le jour bleu", content: "un deux trois nous irons au bois, cueillir des cerises")
+article4 = Post.create(title: "le jour orange", content: "un deux trois nous irons au bois, cueillir des cerises")
+article5 = Post.create(title: "le jour jaune", content: "un deux trois nous irons au bois, cueillir des cerises")
