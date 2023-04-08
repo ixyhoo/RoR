@@ -7,9 +7,11 @@
 <p>
 <a href="<%= post_path(post.id)%>" class="btn btn-primary">lire la suite</a>
 <a href="<%= edit_post_path(post.id)%>" class="btn btn-default">editer</a>
+<%= link_to 'Supprimer', post_path(post), method: :delete, data: { confirm: 'êtes vous sur ?' }, class: 'btn btn-danger' %>
+
 </p>
 <% end  %>
 
 <p>
-<a href="<%= new_post_path(post.id)%>" class="btn btn-success">créer un article</a>
+<a href="<%= new_post_path %>" class="btn btn-success">créer un article</a>
 </p>
